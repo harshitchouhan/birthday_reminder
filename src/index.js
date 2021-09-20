@@ -1,7 +1,11 @@
-import ReactDom from "react-dom";
+import React from 'react';
+import ReactDom from 'react-dom';
 
-function Greetings() {
-  return <h4>React Boilerplate</h4>;
-}
+import App from './App';
 
-ReactDom.render(<Greetings></Greetings>, document.getElementById("root"));
+ReactDom.render(
+  <React.StrictMode>
+    <App></App>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
